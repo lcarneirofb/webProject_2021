@@ -1,0 +1,11 @@
+.logo{
+    position: absolute;
+    top: -200px;
+    max-height: 10px;
+    max-width: 10px;
+}
+
+.paper{
+    position: relative;
+    top: -200px;
+}

@@ -1,0 +1,25 @@
+.cardGrid{
+ height: 1000;
+ width: 1000;
+}
+
+.partyImage{
+ height: 1000;
+ width: 1000;
+ color: #fff
+}
+
+partyImage, comunityImage{
+    position: relative;
+    top: 100px;
+    color: #fff;
+    box-sizing: 'padding-box';
+    font-size: 50px;
+    padding: 100px 50px;
+    border-radius: 10px;
+}
+
+footer{
+    position: relative;
+    top: 200px;
+}
