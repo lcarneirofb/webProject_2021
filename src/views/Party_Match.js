@@ -11,20 +11,8 @@ import Link from '@material-ui/core/Link';
 import findingPlayerImage from '../../src/views/images/finding-player.jpeg'
 import findingTeamImage from '../../src/views/images/finding-team.jpg';
 import './Party_Match.css'
-
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        PARTYMATCH
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import Footer from '../../src/views/footer/Footer.js'
+import Topbar from '../../src/views/topbar/Topbar.js'
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -66,14 +54,7 @@ export default function Album() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <AccountCircleIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            PARTYMATCH
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Topbar />
       <main>
         <Container className={classes.cardGrid} maxWidth="">
           {/* End hero unit */}
@@ -88,15 +69,7 @@ export default function Album() {
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          PARTYMATCH
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Jogue Junto!
-        </Typography>
-        <Copyright />
-      </footer>
+      <Footer />
       {/* End footer */}
     </React.Fragment>
   );
