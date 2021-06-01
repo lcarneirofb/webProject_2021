@@ -1,6 +1,5 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -11,20 +10,11 @@ import Link from '@material-ui/core/Link';
 import ppartyImage from '../../src/views/images/gaming-party-bus.jpg'
 import ccomunityImage from '../../src/views/images/gaming-comunity.jpg';
 import './Home.css'
+import Footer from '../../src/views/footer/Footer.js'
+import PerfilIcon from '../../src/views/perfilIcon/PerfilIcon.js'
+import Topbar from '../../src/views/topbar/Topbar.js'
 
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        PARTYMATCH
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -60,20 +50,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Album() {
+export default function Home() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar position="relative">
-        <Toolbar>
-          <AccountCircleIcon className={classes.icon} />
-          <Typography variant="h6" color="inherit" noWrap>
-            PARTYMATCH
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Topbar />
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -105,15 +88,7 @@ export default function Album() {
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          PARTYMATCH
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Jogue Junto!
-        </Typography>
-        <Copyright />
-      </footer>
+      <Footer />
       {/* End footer */}
     </React.Fragment>
   );
